@@ -4,10 +4,11 @@ install:
 	pip install -r requirements.txt
 format:
 	#format code
+	#black *.py app/*.py
 lint:
 	#flake8 or pylint
 test:
-	#test
+	pytest
 deploy:
 	#deploy
 all:install lint test deploy
